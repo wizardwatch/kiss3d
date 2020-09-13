@@ -27,6 +27,10 @@ Most features are one-liners.
 * change an object color or texture.
 * change an object transform (we use the [nalgebra](http://nalgebra.org) library
   to do that).
+  ```
+  [dependencies]
+  nalgebra = "0.22.0"
+  ```
 * create basic post-processing effects.
 
 As an example, having a red, rotating cube with the light attached to the camera is as simple as (NOTE: this will **not** compile when targeting WASM):
