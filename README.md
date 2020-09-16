@@ -17,6 +17,9 @@ with one-liners.
 
 An on-line version of this documentation is available [here](http://kiss3d.org).
 
+## New Documentation \[WIP]
+[Here.](https://wizardwatch.github.io/kiss3d/index.html)
+
 ## Features
 Most features are one-liners.
 
