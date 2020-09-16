@@ -1,0 +1,1 @@
+initSidebarItems({"trait":[["Material","Trait implemented by materials."],["PlanarMaterial","A material for 2D objects."]]});

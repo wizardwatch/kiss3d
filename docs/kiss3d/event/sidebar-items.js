@@ -1,0 +1,1 @@
+initSidebarItems({"enum":[["Action",""],["Key",""],["MouseButton",""],["TouchAction",""],["WindowEvent",""]],"struct":[["Event","An event."],["EventManager","A stand-alone object that provides an iterator though glfw events."],["Events","An iterator through events."],["Modifiers","Key modifiers"]]});

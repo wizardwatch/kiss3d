@@ -1,0 +1,1 @@
+initSidebarItems({"mod":[["line_renderer","A batched line renderer."],["point_renderer","A batched point renderer."]],"trait":[["Renderer","Trait implemented by custom renderer."]]});

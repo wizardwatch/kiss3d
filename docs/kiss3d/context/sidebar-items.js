@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["Buffer",""],["Context",""],["Framebuffer",""],["GLContext","An OpenGL context."],["Program",""],["Renderbuffer",""],["Shader",""],["Texture",""],["UniformLocation",""]],"type":[["GLenum",""],["GLintptr",""],["GLsizeiptr",""]]});

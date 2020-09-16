@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["FixedView","A camera that cannot move."],["Sidescroll","A 2D camera that can be zoomed and panned."]],"trait":[["PlanarCamera","Trait every 2D camera must implement."]]});

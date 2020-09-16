@@ -1,0 +1,1 @@
+initSidebarItems({"static":[["POINTS_FRAGMENT_SRC","Fragment shader used by the material to display point."],["POINTS_VERTEX_SRC","Vertex shader used by the material to display point."]],"struct":[["PointRenderer","Structure which manages the display of short-living points."]]});

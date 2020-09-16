@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["ConstantOrigin","A support mapping that is always equal to the origin, independently from its transform."],["DilatedShape","The Minkowski sum of a shape and a ball."]]});

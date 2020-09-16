@@ -1,0 +1,41 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="rustdoc"><meta name="description" content="API documentation for the Rust `ncollide3d` crate."><meta name="keywords" content="rust, rustlang, rust-lang, ncollide3d"><title>ncollide3d - Rust</title><link rel="stylesheet" type="text/css" href="../normalize.css"><link rel="stylesheet" type="text/css" href="../rustdoc.css" id="mainThemeStyle"><link rel="stylesheet" type="text/css" href="../dark.css"><link rel="stylesheet" type="text/css" href="../light.css" id="themeStyle"><script src="../storage.js"></script><noscript><link rel="stylesheet" href="../noscript.css"></noscript><link rel="shortcut icon" href="../favicon.ico"><style type="text/css">#crate-search{background-image:url("../down-arrow.svg");}</style></head><body class="rustdoc mod"><!--[if lte IE 8]><div class="warning">This old browser is unsupported and will most likely display funky things.</div><![endif]--><nav class="sidebar"><div class="sidebar-menu">&#9776;</div><a href='../ncollide3d/index.html'><div class='logo-container'><img src='../rust-logo.png' alt='logo'></div></a><p class='location'>Crate ncollide3d</p><div class="sidebar-elems"><a id='all-types' href='all.html'><p>See all ncollide3d's items</p></a><div class="block items"><ul><li><a href="#reexports">Re-exports</a></li><li><a href="#modules">Modules</a></li></ul></div><p class='location'></p><script>window.sidebarCurrent = {name: 'ncollide3d', ty: 'mod', relpath: '../'};</script></div></nav><div class="theme-picker"><button id="theme-picker" aria-label="Pick another theme!"><img src="../brush.svg" width="18" alt="Pick another theme!"></button><div id="theme-choices"></div></div><script src="../theme.js"></script><nav class="sub"><form class="search-form"><div class="search-container"><div><select id="crate-search"><option value="All crates">All crates</option></select><input class="search-input" name="search" disabled autocomplete="off" spellcheck="false" placeholder="Click or press ‘S’ to search, ‘?’ for more options…" type="search"></div><a id="settings-menu" href="../settings.html"><img src="../wheel.svg" width="18" alt="Change settings"></a></div></form></nav><section id="main" class="content"><h1 class='fqn'><span class='out-of-band'><span id='render-detail'><a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">[<span class='inner'>&#x2212;</span>]</a></span><a class='srclink' href='../src/ncollide3d/lib.rs.html#1-169' title='goto source code'>[src]</a></span><span class='in-band'>Crate <a class="mod" href=''>ncollide3d</a></span></h1><div class='docblock'><h1 id="ncollide" class="section-header"><a href="#ncollide">ncollide</a></h1>
+<p><strong>ncollide</strong> is a 2 and 3-dimensional collision detection library written with
+the rust programming language.</p>
+<p>As its name suggests, it is generic wrt the dimension: it works with both
+2-dimensional and 3-dimensional shapes.</p>
+<p>The official user guide is available <a href="http://ncollide.org">here</a>.
+The rustdoc documentation is available <a href="http://ncollide.org/rustdoc/ncollide">here</a>.</p>
+<h2 id="compilation" class="section-header"><a href="#compilation">Compilation</a></h2>
+<p>You will need the last stable build of the <a href="http://www.rust-lang.org">rust compiler</a>
+and the official package manager: <a href="https://github.com/rust-lang/cargo">cargo</a>.</p>
+<p>Simply add the following to your <code>Cargo.toml</code> file:</p>
+
+<div class='information'><div class='tooltip ignore'>ⓘ<span class='tooltiptext'>This example is not tested</span></div></div><div class="example-wrap"><pre class="rust rust-example-rendered ignore">
+[<span class="ident">dependencies</span>]
+<span class="ident">ncollide2d</span> <span class="op">=</span> <span class="string">&quot;0.23&quot;</span> # <span class="ident">For</span> <span class="number">2D</span> <span class="ident">collision</span> <span class="ident">detection</span>.
+<span class="ident">ncollide3d</span> <span class="op">=</span> <span class="string">&quot;0.23&quot;</span> # <span class="ident">For</span> <span class="number">3D</span> <span class="ident">collision</span> <span class="ident">detection</span>.</pre></div>
+<h2 id="features" class="section-header"><a href="#features">Features</a></h2>
+<ul>
+<li>dynamic bounding volume tree based broad phase</li>
+<li>ball vs. ball collision detection,</li>
+<li>plane vs. any convex object collision detection.</li>
+<li>collision detection between arbitrary convex objects</li>
+<li>compound shapes</li>
+<li>ray-casting</li>
+<li>time of impact computation  for objects without rotational movement (compound vs. compound is not
+yet implemented)</li>
+</ul>
+<p>And various traits for collision detectors and broad phase collision detection.</p>
+</div><h2 id='reexports' class='section-header'><a href="#reexports">Re-exports</a></h2>
+<table><tr><td><code>pub extern crate <a class="mod" href="../nalgebra/index.html" title="mod nalgebra">nalgebra</a> as na;</code></td></tr><tr><td><code>pub extern crate <a class="mod" href="../simba/index.html" title="mod simba">simba</a>;</code></td></tr><tr><td><code>pub use crate::pipeline::<a class="mod" href="../ncollide3d/pipeline/broad_phase/index.html" title="mod ncollide3d::pipeline::broad_phase">broad_phase</a>;</code></td></tr><tr><td><code>pub use crate::pipeline::<a class="mod" href="../ncollide3d/pipeline/narrow_phase/index.html" title="mod ncollide3d::pipeline::narrow_phase">narrow_phase</a>;</code></td></tr><tr><td><code>pub use crate::pipeline::<a class="mod" href="../ncollide3d/pipeline/world/index.html" title="mod ncollide3d::pipeline::world">world</a>;</code></td></tr></table><h2 id='modules' class='section-header'><a href="#modules">Modules</a></h2>
+<table><tr class='module-item'><td><a class="mod" href="bounding_volume/index.html" title='ncollide3d::bounding_volume mod'>bounding_volume</a></td><td class='docblock-short'><p>Bounding volumes.</p>
+</td></tr><tr class='module-item'><td><a class="mod" href="interpolation/index.html" title='ncollide3d::interpolation mod'>interpolation</a></td><td class='docblock-short'><p>Interpolation of the motion of an object.</p>
+</td></tr><tr class='module-item'><td><a class="mod" href="math/index.html" title='ncollide3d::math mod'>math</a></td><td class='docblock-short'><p>Compilation flags dependent aliases for mathematical types.</p>
+</td></tr><tr class='module-item'><td><a class="mod" href="partitioning/index.html" title='ncollide3d::partitioning mod'>partitioning</a></td><td class='docblock-short'><p>Spatial partitioning tools.</p>
+</td></tr><tr class='module-item'><td><a class="mod" href="pipeline/index.html" title='ncollide3d::pipeline mod'>pipeline</a></td><td class='docblock-short'><p>Persistent and time-coherent collision detection.</p>
+</td></tr><tr class='module-item'><td><a class="mod" href="procedural/index.html" title='ncollide3d::procedural mod'>procedural</a></td><td class='docblock-short'><p>Procedural mesh generation.</p>
+</td></tr><tr class='module-item'><td><a class="mod" href="query/index.html" title='ncollide3d::query mod'>query</a></td><td class='docblock-short'><p>Non-persistent geometric queries.</p>
+</td></tr><tr class='module-item'><td><a class="mod" href="shape/index.html" title='ncollide3d::shape mod'>shape</a></td><td class='docblock-short'><p>Collision shapes supported by ncollide.</p>
+</td></tr><tr class='module-item'><td><a class="mod" href="transformation/index.html" title='ncollide3d::transformation mod'>transformation</a></td><td class='docblock-short'><p>Transformation, simplification and decomposition of meshes.</p>
+</td></tr><tr class='module-item'><td><a class="mod" href="utils/index.html" title='ncollide3d::utils mod'>utils</a></td><td class='docblock-short'><p>Various unsorted geometrical and logical operators.</p>
+</td></tr></table></section><section id="search" class="content hidden"></section><section class="footer"></section><script>window.rootPath = "../";window.currentCrate = "ncollide3d";</script><script src="../aliases.js"></script><script src="../main.js"></script><script defer src="../search-index.js"></script></body></html>
